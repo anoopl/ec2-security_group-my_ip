@@ -17,7 +17,6 @@ def remove_sg_rule(conn, security_group_id, my_ip):
 def main():
     parser = optparse.OptionParser()
     parser.add_option('-a','--action',help='Add or delete rule in Security Group', dest='action', choices=['add', 'remove',])
-    parser.add_option('-r','--remove',help='Add my Public IP to Security Group', dest='remove')
     parser.add_option('-k', '--key', help='Amazon Access key', dest='aws_access_key_id')
     parser.add_option('-s', '--secret', help='Amazon Secret Key', dest='aws_secret_access_key')
     parser.add_option('-g', '--group', help='Amazon Security Group', dest='security_group_id')
